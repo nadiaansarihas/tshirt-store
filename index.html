@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON THREADS - Y2K Streetwear for Gen Z</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-trail"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <h1 class="logo">NEON THREADS</h1>
+                <span class="tagline">EST. 2000 | FUTURE FASHION</span>
+            </div>
+            
+            <nav class="nav">
+                <a href="#home" class="nav-link">HOME</a>
+                <a href="#products" class="nav-link">SHOP</a>
+                <a href="#about" class="nav-link">VIBE CHECK</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="cart-btn" onclick="toggleCart()">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="matrix-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glitch" data-text="STREETWEAR">STREETWEAR</span>
+                <br>
+                <span class="neon-text">FOR THE</span>
+                <br>
+                <span class="cyber-text">FUTURE</span>
+            </h1>
+            <p class="hero-subtitle">Inspired by the past.</p>
+            <button class="cta-btn" onclick="scrollToProducts()">SHOP →</button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="retro-text">VIRAL COLLECTION</span>
+            </h2>
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-category="all">ALL FITS</button>
+                <button class="filter-btn" data-category="tees">GRAPHIC TEES</button>
+                <button class="filter-btn" data-category="hoodies">HOODIES</button>
+                <button class="filter-btn" data-category="accessories">ACCESSORIES</button>
+            </div>
+
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="cyber-text">THE VIBE CHECK</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to the future of fashion 🚀</h3>
+                    <p>We're bringing back the iconic Y2K aesthetic with a modern twist. Our streetwear hits different because we understand what Gen Z wants - bold graphics, sustainable materials, and fits that make you stand out in the timeline.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-icon">🌍</span>
+                            <span>100% Sustainable Materials</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🔥</span>
+                            <span>Limited Edition Drops</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✨</span>
+                            <span>Main Character Energy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="retro-computer">
+                        <div class="screen">
+                            <div class="terminal">
+                                <p>> LOADING FRESH FITS...</p>
+                                <p>> STATUS: FIRE 🔥</p>
+                                <p>> VIBE: IMMACULATE ✨</p>
+                                <p>> READY TO SLAY? Y/N</p>
+                                <p class="cursor-blink">> Y_</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <div class="cart-overlay" id="cartOverlay">
+        <div class="cart-panel">
+            <div class="cart-header">
+                <h3>YOUR BAG</h3>
+                <button class="close-cart" onclick="toggleCart()">✕</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Your bag is empty... time to shop! 🛍️</p>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <strong>Total: $<span id="cartTotal">0.00</span></strong>
+                </div>
+                <button class="checkout-btn">CHECKOUT 🚀</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>NEON THREADS</h4>
+                    <p>Bringing Y2K vibes to the future 🌟</p>
+                </div>
+                <div class="footer-section">
+                    <h4>QUICK LINKS</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Shop</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="footer-section">
+                    <h4>CONNECT</h4>
+                    <a href="#">TikTok</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Discord</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NEON THREADS. All rights reserved. Stay fresh! ✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
