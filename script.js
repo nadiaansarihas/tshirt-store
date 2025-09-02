@@ -42,7 +42,7 @@ const products = [
         description: "Retro gaming-inspired hoodie with 8-bit graphics. For the nostalgic gamers 🎮",
         price: 75.00,
         category: "hoodies",
-        emoji: "👾",
+        image: "static/images/pixel.png",
         trending: false
     },
     {
