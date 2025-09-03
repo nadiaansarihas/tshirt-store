@@ -78,32 +78,84 @@
             </h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Welcome to the future of fashion 🚀</h3>
-                    <p>We're bringing back the iconic Y2K aesthetic with a modern twist. Our streetwear hits different because we understand what Gen Z wants - bold graphics, sustainable materials, and fits that make you stand out in the timeline.</p>
-                    <div class="features">
-                        <div class="feature">
-                            <span class="feature-icon">🌍</span>
-                            <span>100% Sustainable Materials</span>
+                    <div class="vibe-meter">
+                        <h3>CURRENT VIBE STATUS</h3>
+                        <div class="meter-container">
+                            <div class="meter-bar">
+                                <div class="meter-fill" id="vibeFill"></div>
+                            </div>
+                            <span class="meter-label" id="vibeLabel">CALCULATING...</span>
                         </div>
-                        <div class="feature">
-                            <span class="feature-icon">🔥</span>
-                            <span>Limited Edition Drops</span>
+                    </div>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-card" data-stat="fits-sold">
+                            <div class="stat-number" data-target="2847">0</div>
+                            <div class="stat-label">FITS SOLD</div>
                         </div>
-                        <div class="feature">
-                            <span class="feature-icon">✨</span>
-                            <span>Main Character Energy</span>
+                        <div class="stat-card" data-stat="vibes-checked">
+                            <div class="stat-number" data-target="15692">0</div>
+                            <div class="stat-label">VIBES CHECKED</div>
+                        </div>
+                        <div class="stat-card" data-stat="main-characters">
+                            <div class="stat-number" data-target="1337">0</div>
+                            <div class="stat-label">MAIN CHARACTERS</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mission-statement">
+                        <h4>🎯 MISSION: IMPOSSIBLE TO IGNORE</h4>
+                        <p>We're not just selling clothes - we're selling confidence, creativity, and that unmatched main character energy. Every piece is designed to make you feel like the protagonist of your own story.</p>
+                        
+                        <div class="achievement-badges">
+                            <div class="badge">🏆 TRENDSETTER</div>
+                            <div class="badge">💎 PREMIUM QUALITY</div>
+                            <div class="badge">🌱 ECO-FRIENDLY</div>
+                            <div class="badge">🔥 VIRAL WORTHY</div>
                         </div>
                     </div>
                 </div>
                 <div class="about-visual">
-                    <div class="retro-computer">
-                        <div class="screen">
-                            <div class="terminal">
-                                <p>> LOADING FRESH FITS...</p>
-                                <p>> STATUS: FIRE 🔥</p>
-                                <p>> VIBE: IMMACULATE ✨</p>
-                                <p>> READY TO SLAY? Y/N</p>
-                                <p class="cursor-blink">> Y_</p>
+                    <div class="interactive-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-buttons">
+                                <span class="btn red"></span>
+                                <span class="btn yellow"></span>
+                                <span class="btn green"></span>
+                            </div>
+                            <span class="terminal-title">NEON_THREADS.exe</span>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="code-lines" id="terminalContent">
+                                <div class="code-line">
+                                    <span class="line-number">001</span>
+                                    <span class="code">const vibeLevel = calculateSwag();</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">002</span>
+                                    <span class="code">if (vibeLevel > 9000) {</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">003</span>
+                                    <span class="code">  console.log("IT'S OVER 9000! 🔥");</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">004</span>
+                                    <span class="code">  unlockMainCharacterMode();</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="line-number">005</span>
+                                    <span class="code">}</span>
+                                </div>
+                                <div class="code-line typing">
+                                    <span class="line-number">006</span>
+                                    <span class="code">// Ready to level up? <span class="cursor-blink">|</span></span>
+                                </div>
+                            </div>
+                            
+                            <div class="terminal-interactive">
+                                <button class="terminal-btn" onclick="runVibeCheck()">RUN VIBE CHECK</button>
+                                <button class="terminal-btn" onclick="generateCompliment()">GET HYPED</button>
                             </div>
                         </div>
                     </div>

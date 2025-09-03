@@ -130,6 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeEventListeners();
     createCursorTrail();
     addScrollAnimations();
+    initializeVibeCheck();
+    animateStats();
 });
 
 // Render products based on current filter
@@ -514,6 +516,11 @@ style.textContent = `
 
 document.head.appendChild(style);
 
+// Add the additional styles
+const extraStyle = document.createElement('style');
+extraStyle.textContent = additionalStyles;
+document.head.appendChild(extraStyle);
+
 // Console Easter Egg
 console.log(`
 🌟 WELCOME TO NEON THREADS 🌟
@@ -581,3 +588,151 @@ function showSecretMessage() {
         secretDiv.remove();
     }, 3000);
 }
+
+// Vibe Check Functions
+function initializeVibeCheck() {
+    setTimeout(() => {
+        const vibeFill = document.getElementById('vibeFill');
+        const vibeLabel = document.getElementById('vibeLabel');
+        
+        // Animate vibe meter
+        vibeFill.style.width = '95%';
+        
+        setTimeout(() => {
+            vibeLabel.textContent = 'IMMACULATE ✨';
+        }, 1000);
+    }, 1000);
+}
+
+function runVibeCheck() {
+    const vibeMessages = [
+        "VIBE STATUS: ABSOLUTELY SENDING 🚀",
+        "ENERGY LEVEL: MAIN CHARACTER ✨",
+        "SWAG METER: OFF THE CHARTS 📈",
+        "CONFIDENCE: MAXIMUM OVERDRIVE 💎",
+        "STYLE POINTS: LEGENDARY 🏆",
+        "AURA: UNMATCHED BRILLIANCE 🌟"
+    ];
+    
+    const randomMessage = vibeMessages[Math.floor(Math.random() * vibeMessages.length)];
+    
+    // Create popup notification
+    const notification = document.createElement('div');
+    notification.className = 'vibe-notification';
+    notification.innerHTML = randomMessage;
+    notification.style.cssText = `
+        position: fixed;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: var(--gradient-secondary);
+        color: #000;
+        padding: 1.5rem 2rem;
+        border-radius: 15px;
+        font-weight: bold;
+        z-index: 10000;
+        animation: vibePopup 2s ease-out forwards;
+        pointer-events: none;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 0.8rem;
+        text-align: center;
+        border: 2px solid var(--neon-green);
+        box-shadow: 0 0 30px rgba(0, 255, 65, 0.6);
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 2000);
+}
+
+function generateCompliment() {
+    const compliments = [
+        "You're giving main character energy! 💫",
+        "Your style is absolutely iconic! 🔥",
+        "You're about to break the internet! 📱",
+        "That fit is going to be legendary! ⚡",
+        "You're serving looks and taking names! 👑",
+        "Your vibe is immaculate! ✨",
+        "You're the moment! 🌟",
+        "That's some serious main character behavior! 🎬"
+    ];
+    
+    const randomCompliment = compliments[Math.floor(Math.random() * compliments.length)];
+    
+    // Update terminal with compliment
+    const terminalContent = document.getElementById('terminalContent');
+    const newLine = document.createElement('div');
+    newLine.className = 'code-line';
+    newLine.innerHTML = `
+        <span class="line-number">007</span>
+        <span class="code" style="color: var(--neon-pink);">> ${randomCompliment}</span>
+    `;
+    
+    terminalContent.appendChild(newLine);
+    
+    // Remove after 3 seconds
+    setTimeout(() => {
+        if (newLine.parentNode) {
+            newLine.remove();
+        }
+    }, 3000);
+}
+
+// Animate statistics counters
+function animateStats() {
+    const statCards = document.querySelectorAll('.stat-card');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const numberElement = entry.target.querySelector('.stat-number');
+                const target = parseInt(numberElement.dataset.target);
+                animateNumber(numberElement, target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    statCards.forEach(card => observer.observe(card));
+}
+
+function animateNumber(element, target) {
+    let current = 0;
+    const increment = target / 100;
+    const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+            current = target;
+            clearInterval(timer);
+        }
+        element.textContent = Math.floor(current).toLocaleString();
+    }, 20);
+}
+
+// Add more dynamic styles
+const additionalStyles = `
+    @keyframes vibePopup {
+        0% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.3) rotate(-10deg);
+        }
+        50% {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1.1) rotate(2deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(1) rotate(0deg);
+        }
+    }
+    
+    .typing {
+        animation: typeWriter 2s steps(20) infinite;
+    }
+    
+    @keyframes typeWriter {
+        0%, 90% { width: 0; }
+        100% { width: 100%; }
+    }
+`;
