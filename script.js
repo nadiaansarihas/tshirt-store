@@ -516,11 +516,6 @@ style.textContent = `
 
 document.head.appendChild(style);
 
-// Add the additional styles
-const extraStyle = document.createElement('style');
-extraStyle.textContent = additionalStyles;
-document.head.appendChild(extraStyle);
-
 // Console Easter Egg
 console.log(`
 🌟 WELCOME TO NEON THREADS 🌟
@@ -736,3 +731,8 @@ const additionalStyles = `
         100% { width: 100%; }
     }
 `;
+
+// Add the additional styles
+const extraStyle = document.createElement('style');
+extraStyle.textContent = additionalStyles;
+document.head.appendChild(extraStyle);
