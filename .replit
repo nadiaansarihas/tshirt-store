@@ -39,5 +39,4 @@ externalPort = 3000
 
 [deployment]
 deploymentTarget = "static"
-run = ["python3", "server.py"]
 publicDir = "."
