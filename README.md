@@ -23,7 +23,7 @@ A vibrant Y2K-themed e-commerce website for selling streetwear, featuring neon a
 
 ## Live Demo
 
-[View the live site here](https://your-replit-url.replit.dev)
+[View the live site here](https://tshirt-store-10-nadisaansari2.replit.app)
 
 ## What I Learned
 
