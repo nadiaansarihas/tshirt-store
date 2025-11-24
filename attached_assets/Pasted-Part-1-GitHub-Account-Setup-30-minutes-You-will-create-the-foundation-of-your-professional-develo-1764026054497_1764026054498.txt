@@ -1,0 +1,61 @@
+Part 1: GitHub Account Setup (30 minutes)
+You will create the foundation of your professional developer presence.
+Instructions:
+1. Sign Up & Profile Creation: Go to GitHub and sign up for a free account.
+○ Username Tips: Choose a professional username (use your real name or a variation;
+avoid numbers unless necessary). Remember, employers will see this.
+○ Complete Your Profile: Complete your profile by adding a photo (professional or
+appropriate avatar), a brief bio mentioning you're learning development, and your
+location.
+2. Explore and Star: Take time to explore GitHub, look at some popular repositories, and Star
+interesting projects to save them for later.
+Part 2: Connect Replit to GitHub (45 minutes)
+You will link your T-shirt Store project to your new GitHub account, establishing version control.
+Instructions:
+1. Open Project: Open your T-shirt Store project in Replit.
+2. Connect Git: Find the Git panel (usually in the left sidebar) and connect it to GitHub following
+the Replit prompts.
+3. Create Repository: Create a new, public repository with a descriptive name.
+4. First Commit: Make your first commit with all your current code.
+5. Write README: Write a good README.md file explaining your project, ensuring it includes a
+clear title, description, live demo link, features, technologies, and what you learned.
+1
+{Vibe Coding 101}
+README Template (Example Structure):
+Markdown
+# T-Shirt Store E-Commerce Website
+A responsive e-commerce website for selling custom t-shirts, built as part of the Vibe Coding 101
+course.
+## Features
+- Product catalog with 6+ t-shirt designs
+- Shopping cart functionality
+- Responsive design for mobile and desktop
+- Checkout process with customer information form
+## Technologies Used
+- HTML5 for structure
+- CSS3 for styling and responsive design
+- JavaScript for interactivity
+- Replit for development environment
+## Live Demo
+[View the live site here](your-replit-url)
+## What I Learned
+- How to create responsive web layouts
+- JavaScript for interactive shopping cart
+- CSS Grid and Flexbox for product displays
+- Form handling and validation
+2
+{Vibe Coding 101}
+Part 3: Practice the Git Workflow (45 minutes)
+Practice the version control cycle of making changes, committing, and pushing to GitHub.
+Instructions:
+1. Make Small Improvements: Make a small improvement to your T-shirt store (e.g., Update a
+product description, Change a color in your CSS, Add a new product, Improve the mobile layout).
+2. Review and Commit:
+○ Review your changes in the Git panel.
+○ Write a clear commit message describing exactly what you changed.
+○ Commit the changes to save this snapshot.
+3. Push: Push to GitHub to update your online repository.
+4. Practice Multiple Commits: Repeat this process by making 3-5 small improvements and
+Commit each one separately with good messages.
+5. Verify History: Push all changes to GitHub and view your commit history on GitHub.com.
+This verifies you understand the basic cycle: edit -> commit -> push.

@@ -38,5 +38,6 @@ localPort = 39775
 externalPort = 3000
 
 [deployment]
-deploymentTarget = "autoscale"
+deploymentTarget = "static"
 run = ["python3", "server.py"]
+publicDir = "."
